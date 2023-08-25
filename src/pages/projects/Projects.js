@@ -38,6 +38,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://github.com/Leozbroca/Portfolio"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Github 
@@ -67,6 +68,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://github.com/Leozbroca/Pokedex"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Github 
@@ -78,6 +80,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://historical-boundary.surge.sh/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Visitar site 
@@ -104,6 +107,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://github.com/Leozbroca/LabeFood"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Github 
@@ -115,6 +119,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://carver-labefood5.surge.sh/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Visitar site 
@@ -139,6 +144,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://github.com/Leozbroca/TMDB-movies-Case"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Github 
@@ -150,6 +156,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://famous-work.surge.sh"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Visitar site 
@@ -174,6 +181,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://github.com/Leozbroca/Cookenu-FrontEnd"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Github 
@@ -185,6 +193,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://upbeat-receipt.surge.sh"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Visitar site 
@@ -209,6 +218,7 @@ const ProjectsPage = () => {
                 <a
                   href=""
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Github 
@@ -220,6 +230,7 @@ const ProjectsPage = () => {
                 <a
                   href="https://gigantic-apples.surge.sh"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button>
                     Visitar site 
@@ -239,18 +250,29 @@ const ProjectsPage = () => {
           <div className="content">
           <h2>Encantada Saboaria</h2>
             <div className="info">
-              <p>In Work.</p>
+              <p>E-commerce de uma saboaria.</p>
               <DivLogo>
-                <a
-                  href=""
-                  target="_blank"
+              <a
+                  href="https://github.com/Leozbroca/Encantada-Saboaria-Front-end"
+                  target="_blank" rel="noreferrer"
                 >
-                
+                  <button>
+                    Github 
+                    <div>
+                    <BsGithub size="1.25em"/>
+                    </div>
+                  </button>
                 </a>
                 <a
-                  href="https://gigantic-apples.surge.sh"
-                  target="_blank"
+                  href="https://encantada-saboaria-front-end.vercel.app/"
+                  target="_blank" rel="noreferrer"
                 >
+                  <button>
+                    Visitar site 
+                    <div>
+                      <FiArrowRightCircle size="1.5em" />
+                    </div>  
+                  </button>
                 </a>
               </DivLogo>
             </div>
@@ -268,12 +290,13 @@ const ProjectsPage = () => {
                 <a
                   href=""
                   target="_blank"
+                  rel="noreferrer"
                 >
                 
                 </a>
                 <a
                   href="https://gigantic-apples.surge.sh"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                 </a>
               </DivLogo>

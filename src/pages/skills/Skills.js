@@ -36,7 +36,7 @@ import {
   DivBodyHtml
 } from "./styled";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
-import resume from "../../assets/cv_port.png"
+import resume from "../../assets/LeonardoBroca-CV.pdf"
 
 const SkillsPage = () => {
   return (
