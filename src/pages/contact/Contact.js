@@ -29,7 +29,8 @@ import {
   DivBodyHtml,
   Decoration10resp,
   Decoration9resp,
-  DivFormAlign
+  DivFormAlign,
+  MainDivSub
 } from "./styled";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
 import port from "../../assets/cv_port.png";
@@ -45,6 +46,7 @@ const ContactPage = () => {
   return (
     <MainDiv>
       <ScreenLoading />
+      <MainDivSub>
       <Main1>
         <Decoration1>{"<html>"}</Decoration1>
         <Decoration2>{"<body>"}</Decoration2>
@@ -103,7 +105,7 @@ const ContactPage = () => {
         <Decoration10resp>{"</html>"}</Decoration10resp>
         </DivBodyHtml>
       </Main2>
-      
+      </MainDivSub>
     </MainDiv>
   );
 };

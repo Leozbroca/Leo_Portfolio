@@ -95,8 +95,8 @@ align-items: center;
 `
 
 export const LogoMyImg = styled.img`
-width:150px;
-height:150px;
+width:125px;
+height:125px;
 margin:10px;
 border-radius: 180px;
 opacity:.8;
@@ -105,6 +105,7 @@ opacity:.8;
    -webkit-user-select: none;
    -ms-user-select: none;
    user-select: none;
+   pointer-events: none;
 `
 export const LogoMyName = styled.div`
 font-size: 1.5rem;

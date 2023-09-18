@@ -33,7 +33,8 @@ import {
   Align,
   AlignName,
   PSpecial,
-  DivBodyHtml
+  DivBodyHtml,
+  MainDivSub
 } from "./styled";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
 import resume from "../../assets/LeonardoBroca-CV.pdf"
@@ -42,6 +43,7 @@ const SkillsPage = () => {
   return (
     <MainDiv>
       <ScreenLoading />
+      <MainDivSub>
       <Main1>
         <Decoration1>{"<html>"}</Decoration1>
         <Decoration2>{"<body>"}</Decoration2>
@@ -155,6 +157,7 @@ const SkillsPage = () => {
         </DivBodyHtml>
         
       </Main2>
+      </MainDivSub>
     </MainDiv>
   );
 };

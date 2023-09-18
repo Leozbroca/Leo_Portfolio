@@ -6,17 +6,28 @@ export const MainDiv = styled.div`
   background-color: #1d1d1d;
   height: 100%;
   min-height: 100vh;
-  margin-left: 10rem;
   display: flex;
   flex-direction: row;
 
+
+`;
+
+export const MainDivSub = styled.div`
+margin-left:10rem;
+display: flex;
+  flex-direction: row;
   @media (max-width: 1400px) {
     flex-direction: column;
   }
-  @media (max-width: 800px) {
-    margin-left: 0px;
+
+@media (max-width: 800px) {
+    margin-left:0px;
+    font-size:12px;
+    h2{
+      font-size:40px;
+    }
   }
-`;
+`
 
 export const Main1 = styled.div`
   margin: 0;
@@ -32,10 +43,21 @@ export const Main1 = styled.div`
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
+  @media (max-width: 1400px) {
+    width: 85%;
+  }
   @media (max-width: 800px) {
+    width: 80%;
+  }
+
+  @media (max-width: 550px) {
     width: 70%;
   }
+
+  @media (max-width: 350px) {
+    width: 60%;
+  }
+
 `;
 
 export const Main2 = styled.div`
@@ -180,11 +202,12 @@ export const Text = styled.p`
 
   @media (max-width: 1400px) {
     width: 100%;
+  }
 
+  @media (max-width: 350px) {
+    margin-right:0;
   }
-  @media (max-width: 450px) {
-    width: 60%;
-  }
+
 `;
 
 export const Border = styled.div`

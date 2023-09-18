@@ -6,16 +6,26 @@ export const MainDiv = styled.div`
   background-color: #1d1d1d;
   height: 100%;
   min-height: 100vh;
-  margin-left: 10rem;
-  display: flex;
+
+
+
+`;
+
+export const MainDivSub = styled.div`
+margin-left:10rem;
+display: flex;
   flex-direction: row;
-  @media (max-width: 1400px) {
+@media (max-width: 1400px) {
     flex-direction: column;
   }
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
     margin-left:0px;
+    font-size:12px;
+    h2{
+      font-size:40px;
+    }
   }
-`;
+`
 
 export const Main1 = styled.div`
   margin: 0;
@@ -133,6 +143,10 @@ export const Text = styled.p`
   margin-right: 10rem;
   letter-spacing: 1px;
   font-family: 'Bree Serif', serif;
+
+  @media (max-width: 800px) {
+   width:60%;
+  }
 `;
 
 export const Skill1 = styled.div`
@@ -146,6 +160,10 @@ export const Skill1 = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 800px) {
+    width: 85%;
+    text-align: start;
+  }
 `;
 
 export const Skill = styled.div`
@@ -155,6 +173,11 @@ export const Skill = styled.div`
   align-items: flex-start;
   @media (max-width: 1400px) {
     width: 50%;
+    text-align: start;
+  }
+
+  @media (max-width: 800px) {
+    width: 85%;
     justify-content: center;
     align-items: center;
     text-align: start;
@@ -199,6 +222,13 @@ export const BoxContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 800px) {
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
 `;
 
 export const Box = styled.div`
@@ -242,6 +272,20 @@ export const Box = styled.div`
     padding: 0;
     margin: 0;
     font-family: 'Bree Serif', serif;
+  }
+
+  @media (max-width: 800px) {
+
+    h1{
+      font-size:18px;
+    }
+    h2{
+      font-size:10px;
+    }
+    p{
+      font-size:12px;
+    }
+   
   }
 `;
 
@@ -459,6 +503,7 @@ export const DivBodyHtml = styled.p`
 export const Decoration9resp = styled.p`
   font-family: "La Belle Aurore", cursive;
   color: #515152;
+  font-size: 18px;
   margin-left: 2rem;
   :hover {
     cursor: default;

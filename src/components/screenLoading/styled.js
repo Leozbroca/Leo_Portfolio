@@ -14,6 +14,7 @@ export const ContainerScreen = styled.div`
   min-height:100%;
   width:100%;
   position:fixed;
+  margin-left:10em;
   p{
       color:#909096;
       display:block;
@@ -21,6 +22,10 @@ export const ContainerScreen = styled.div`
   z-index: 3;
     overflow: hidden;
     font-family: 'Bree Serif', serif;
+
+@media (max-width: 800px) {
+    margin:0;
+  }
 `
 
 export const Loading = styled.div`
@@ -56,4 +61,8 @@ width:30%;
 export const Photo = styled.img`
 width:27em;
 height:10em;
+@media (max-width: 800px) {
+    width:15em;
+    height:10em;
+  }
 `

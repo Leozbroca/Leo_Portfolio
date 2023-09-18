@@ -15,13 +15,7 @@ b{
     font-family: 'Righteous', cursive;
 }
 `
-
-export const MainDiv = styled.div`
-margin:0;
-padding:0;
-background-color:#1d1d1d;
-height:100vh;
-margin-left:10rem;
+export const SecondMainDiv = styled.div`
 display: flex;
 flex-direction: column;
 font-family: 'Bree Serif', serif;
@@ -31,13 +25,14 @@ font-family: 'Bree Serif', serif;
    -webkit-user-select: none;
    -ms-user-select: none;
    user-select: none;
+height:100vh;
+margin-left:10rem;
 
-   @media (max-width: 1200px) {
-    
-  }
-   @media (max-width: 800px) {
+@media (max-width: 800px) {
     margin-left:0px;
+    font-size:12px;
   }
+
 
 .container{
     position:relative;
@@ -69,8 +64,8 @@ font-family: 'Bree Serif', serif;
 
 .container .box{
     position:relative;
-    width:calc(500px - 30px);
-    height:calc(250px - 30px);
+    width:calc(400px - 30px);
+    height:calc(260px - 30px);
     background-color: #000;
     float:left;
     margin:15px;
@@ -124,13 +119,15 @@ font-family: 'Bree Serif', serif;
 
 .container .box .imgBox{
     position:relative;
+    
+    
 }
 
 .container .box .imgBox img{
     background-size: contain;
-    width:100%;
-    height:100%;
+    width:150%;
     transition:0.5s;
+    
 }
 
 .container .box:hover .imgBox img{
@@ -146,7 +143,7 @@ font-family: 'Bree Serif', serif;
     z-index:2;
     padding:20px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: center; 
 }
 
 .container .box .content h2{
@@ -222,6 +219,23 @@ font-family: 'Bree Serif', serif;
     transform: translateY(0px);
     transition-delay:0.2s;
 }
+`
+
+export const MainDiv = styled.div`
+margin:0;
+padding:0;
+background-color:#1d1d1d;
+height:100vh;
+
+display: flex;
+flex-direction: column;
+font-family: 'Bree Serif', serif;
+/* pointer-events: none; */
+-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 `
 
 export const DivLogo = styled.div`

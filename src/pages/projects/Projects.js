@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MainDiv, Title, DivLogo, ImgHeader, Decoration3, Decoration4 } from "./styled";
+import { MainDiv, Title, DivLogo, ImgHeader, Decoration3, Decoration4, SecondMainDiv } from "./styled";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
 import site1 from "../../assets/site1.png";
 import site2 from "../../assets/site2.png";
@@ -13,12 +13,16 @@ import { IconContext } from "react-icons";
 import { BsGithub } from "react-icons/bs";
 import { FiArrowRightCircle } from "react-icons/fi";
 import ResponsiveHeader from "../../components/responsiveHeader/ResponsiveHeader";
+import Header from '../../components/header/Header';
 
 const ProjectsPage = () => {
   return (
     <MainDiv>
       <ScreenLoading />
+      {/* <Header/> */}
       {/* <ResponsiveHeader/> */}
+      
+      <SecondMainDiv>
       <ImgHeader src="https://capsule-render.vercel.app/api?type=waving&color=red&height=80&section=header"/>
       <Title>
       <Decoration3>{"<h1>"}</Decoration3>
@@ -304,7 +308,7 @@ const ProjectsPage = () => {
           </div>
         </div>
       </div>
-      
+      </SecondMainDiv>
     </MainDiv>
   );
 };

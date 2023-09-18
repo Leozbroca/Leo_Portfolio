@@ -6,9 +6,16 @@ export const MainDiv = styled.div`
   background-color: #1d1d1d;
   height: 100%;
   min-height: 100vh;
-  margin-left: 10rem;
-  display: flex;
+
+  
+`;
+
+
+export const MainDivSub = styled.div`
+margin-left:10rem;
+display: flex;
   flex-direction: row;
+
   @media (max-width: 1400px) {
     flex-direction: column;
   }
@@ -33,6 +40,9 @@ export const MainDiv = styled.div`
       align-items: center;
       height: 50%;
     }
+    @media (max-width: 450px) {
+      margin-top:0;
+    }
   }
   .google-map iframe {
     width: 100%;
@@ -42,6 +52,10 @@ export const MainDiv = styled.div`
 
     @media (max-width: 1400px) {
       width: 80%;
+    }
+
+    @media (max-width: 450px) {
+      display:none;
     }
   }
   .map-content {
@@ -55,6 +69,9 @@ export const MainDiv = styled.div`
 
     @media (max-width: 1400px) {
       left: 12%;
+    }
+    @media (max-width: 450px) {
+      display:none;
     }
 
     p {
@@ -80,7 +97,7 @@ export const MainDiv = styled.div`
   @media (max-width: 800px) {
     margin-left: 0px;
   }
-`;
+`
 
 export const Main1 = styled.div`
   margin: 0;
@@ -402,6 +419,7 @@ export const Decoration9 = styled.p`
   font-family: "La Belle Aurore", cursive;
   color: #515152;
   margin-left: 2rem;
+  font-size: 18px;
   :hover {
     cursor: default;
   }
@@ -467,6 +485,7 @@ export const Decoration9resp = styled.p`
   font-family: "La Belle Aurore", cursive;
   color: #515152;
   margin-left: 2rem;
+  font-size: 18px;
   :hover {
     cursor: default;
   }

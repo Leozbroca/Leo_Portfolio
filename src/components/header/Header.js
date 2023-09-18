@@ -19,6 +19,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import l6 from '../../assets/L6.png'
 import leo from "../../assets/leo.jpg"
+import logo from '../../assets/logoGold.png'
 import { goToAbout, goToSkills, goToProjects, goToContact, goToHome } from "../../routes/Coordinator";
 
 const Header = () => {
@@ -68,7 +69,7 @@ const Header = () => {
     <MainHeader>
       <HeadTop>
         <TopLogo>
-          <LogoMyImg src={leo}/>
+          <LogoMyImg className="animate__animated animate__rotateIn animate__slow" src={logo}/>
           <LogoMyName onClick={mudarPagHome}>Leozbroca</LogoMyName>
         </TopLogo>
         <TopWrite>Web Developer</TopWrite>

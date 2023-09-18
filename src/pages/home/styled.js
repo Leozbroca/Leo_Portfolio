@@ -5,16 +5,26 @@ margin:0;
 padding:0;
 background-color:#1d1d1d;
 height:100vh;
-margin-left:10rem;
 
+
+`
+export const MainDivSub = styled.div`
+margin-left:10rem;
 @media (max-width: 800px) {
     text-align: center;
     margin:0;
+    padding:0;
     width:100vw;
     display:flex;
     justify-content: center;
   }
 `
+
+// export const Imgletter = styled.img`
+// display:inline;
+// width:150px;
+// height:150px;
+// `
 
 export const Main1 = styled.div`
 margin:0;

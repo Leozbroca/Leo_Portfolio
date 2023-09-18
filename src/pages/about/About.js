@@ -19,6 +19,7 @@ import {
   Border,
   ImgBorder,
   FixedB,
+  MainDivSub
 } from "./styled";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
 import Footer from "../../components/footer/Footer";
@@ -38,6 +39,7 @@ const AboutPage = () => {
   return (
     <MainDiv>
       <ScreenLoading />
+      <MainDivSub>
       <Main1>
         <FixedB>
         <Decoration1>{"<html>"}</Decoration1>
@@ -72,6 +74,7 @@ These hobbies and activities not only provide me with relaxation and entertainme
       <Main2>
         <TextSphere />
       </Main2>
+      </MainDivSub>
     </MainDiv>
   );
 };

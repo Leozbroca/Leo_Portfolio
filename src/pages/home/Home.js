@@ -6,6 +6,7 @@ import {
   LetterLogo,
   Main1,
   Paragraph,
+  MainDivSub
 } from "./styled.js";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading.js";
 import { useNavigate } from "react-router-dom";
@@ -26,6 +27,8 @@ const HomePage = () => {
   return (
     <MainDiv>
       <ScreenLoading/>
+      
+      <MainDivSub>
       <Background />
       <Main1>
         <FirstDiv>
@@ -67,6 +70,7 @@ const HomePage = () => {
           Full Stack Developer / Data Scientist
         </SecondDiv>
       </Main1>
+      </MainDivSub>
     </MainDiv>
   );
 };
