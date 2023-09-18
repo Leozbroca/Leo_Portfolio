@@ -100,6 +100,9 @@ export const Title = styled.h2`
   p {
     display: inline;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration1 = styled.div`
@@ -129,6 +132,9 @@ export const Decoration3 = styled.div`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration4 = styled.div`
@@ -140,6 +146,9 @@ export const Decoration4 = styled.div`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 export const Decoration5 = styled.p`
   font-family: "La Belle Aurore", cursive;
@@ -150,6 +159,9 @@ export const Decoration5 = styled.p`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration6 = styled.p`
@@ -161,6 +173,9 @@ export const Decoration6 = styled.p`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration9 = styled.p`
@@ -168,6 +183,7 @@ export const Decoration9 = styled.p`
   color: #515152;
   margin: 0;
   margin-left: 2rem;
+  font-size: 18px;
   :hover {
     cursor: default;
   }
@@ -208,6 +224,9 @@ export const Text = styled.p`
     margin-right:0;
   }
 
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Border = styled.div`

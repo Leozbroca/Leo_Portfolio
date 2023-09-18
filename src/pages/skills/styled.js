@@ -25,6 +25,13 @@ display: flex;
       font-size:40px;
     }
   }
+
+  @media (max-width: 300px) {
+    b{
+      font-size:30px;
+  }
+  font-size:10px;
+  }
 `
 
 export const Main1 = styled.div`
@@ -71,6 +78,10 @@ export const Title = styled.h2`
   padding: 0;
   margin-left: 5rem;
   font-family: 'Righteous', cursive;
+
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration1 = styled.div`
@@ -101,6 +112,9 @@ export const Decoration3 = styled.div`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration4 = styled.div`
@@ -112,6 +126,9 @@ export const Decoration4 = styled.div`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 export const Decoration5 = styled.p`
   font-family: "La Belle Aurore", cursive;
@@ -122,6 +139,9 @@ export const Decoration5 = styled.p`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Decoration6 = styled.p`
@@ -133,6 +153,9 @@ export const Decoration6 = styled.p`
   :hover {
     cursor: default;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Text = styled.p`
@@ -147,6 +170,9 @@ export const Text = styled.p`
   @media (max-width: 800px) {
    width:60%;
   }
+  @media (max-width: 300px) {
+      margin-left:3rem;
+    }
 `;
 
 export const Skill1 = styled.div`
@@ -242,15 +268,7 @@ export const Box = styled.div`
   color: #ffffff;
   padding: 10px;
 
-  @media (max-width: 1950px) {
-  }
-  @media (max-width: 1800px) {
-  }
-  @media (max-width: 1650px) {
-  }
-  @media (max-width: 1150px) {
-  }
-
+ 
   h1 {
     font-size: 20px;
     padding: 0;
@@ -272,6 +290,22 @@ export const Box = styled.div`
     padding: 0;
     margin: 0;
     font-family: 'Bree Serif', serif;
+    @media (max-width: 450px) {
+      padding-right:50px;
+    }
+    @media (max-width: 380px) {
+      padding-right:80px;
+    }
+    @media (max-width: 345px) {
+      padding-right:95px;
+    }
+
+    @media (max-width: 320px) {
+      padding-right:105px;
+    }
+    @media (max-width: 300px) {
+      padding-right:110px;
+    }
   }
 
   @media (max-width: 800px) {
@@ -440,6 +474,10 @@ margin-left:16rem; */
   transition: 0.5s;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
 
+  @media (max-width: 350px) {
+    width:12rem;
+  }
+
   :hover {
     background-color: #ad1111;
     color: #111;
@@ -508,6 +546,7 @@ export const Decoration9resp = styled.p`
   :hover {
     cursor: default;
   }
+  margin-top:-30px;
 `;
 export const Decoration10resp = styled.p`
   font-family: "La Belle Aurore", cursive;

@@ -95,6 +95,17 @@ font-family: 'Bree Serif', serif;
     cursor: default;
 }
 z-index:2;
+
+@media (max-width: 800px) {
+    margin-left:0;
+  }
+
+@media (max-width: 450px) {
+    font-size:20px;
+  }
+  @media (max-width: 300px) {
+    font-size:15px;
+  }
 `
 
 export const LetterLogo = styled.img`
@@ -110,4 +121,10 @@ filter: grayscale();
 export const Paragraph = styled.div`
 margin:0;
 padding:0;
+@media (max-width: 450px) {
+    font-size:40px;
+  }
+  @media (max-width: 300px) {
+    font-size:30px;
+  }
 `

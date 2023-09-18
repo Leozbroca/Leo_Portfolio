@@ -289,7 +289,7 @@ const ProjectsPage = () => {
           <div className="content">
           <h2>Lotus Store</h2>
             <div className="info">
-              <p>In Work.</p>
+              <h3>In Work.</h3>
               <DivLogo>
                 <a
                   href=""
