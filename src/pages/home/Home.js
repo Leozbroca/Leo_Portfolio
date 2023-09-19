@@ -13,20 +13,28 @@ import { useNavigate } from "react-router-dom";
 import Background from "../../components/background/Background";
 import ResponsiveHeader from "../../components/responsiveHeader/ResponsiveHeader.js";
 
+
+import Burger from "../../components/Burger/Burger.js";
+import Menu from "../../components/Menu/Menu.js";
+
+
 const HomePage = () => {
   const navigate = useNavigate();
-  const [hasClick, setHasClick] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  const handleClick = () => {
-    if (hasClick == true) {
-      setHasClick(false);
-    } else {
-      setHasClick(true);
-    }
-  };
+
   return (
     <MainDiv>
       <ScreenLoading/>
+
+
+
+      <div>
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </div>
+
+
       
       <MainDivSub>
       <Background />

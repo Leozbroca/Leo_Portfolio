@@ -66,31 +66,30 @@ const ContactPage = () => {
 
           <Form onSubmit={submiting}>
             <DivForm>
-            <div className="column">
-              <div className="form-control-1">
-                <input
-                  className="input input-alt"
-                  placeholder="Name"
-                  required=""
-                  type="text"
-                />
-                <span className="input-border input-border-alt"></span>
-              </div>
-              <div className="form-control-2">
-                <input
-                  className="input input-alt"
-                  placeholder="Email"
-                  required=""
-                  type="text"
-                />
-                <span className="input-border input-border-alt"></span>
-              </div>
+              <div className="column">
+                <div className="form-control-1">
+                  <input
+                    className="input input-alt"
+                    placeholder="Name"
+                    required
+                    type="text"
+                  />
+                  <span className="input-border input-border-alt"></span>
+                </div>
+                <div className="form-control-2">
+                  <input
+                    className="input input-alt"
+                    placeholder="Email"
+                    required
+                    type="text"
+                  />
+                  <span className="input-border input-border-alt"></span>
+                </div>
               </div>
               <div className="form-control-3">
                 <input
                   className="input input-alt"
                   placeholder="Subject"
-                  required=""
                   type="text"
                 />
                 <span className="input-border input-border-alt"></span>
@@ -99,7 +98,7 @@ const ContactPage = () => {
                 <textarea
                   className="input input-alt"
                   placeholder="Message"
-                  required=""
+                  required
                   type="text"
                 />
                 <span className="input-border input-border-alt"></span>
