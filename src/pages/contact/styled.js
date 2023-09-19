@@ -318,16 +318,6 @@ export const DivFormAlign = styled.div`
   width: 100%;
 `;
 
-export const StyledInputs = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @media (max-width: 450px) {
-    flex-direction: column;
-  }
-`;
-
 export const StyledInput5 = styled.button`
   width: 10rem;
   height: 3rem;
@@ -483,36 +473,7 @@ export const Decoration10 = styled.p`
     display: none;
   }
 `;
-export const TitleCV = styled.h2`
-  color: #ad1111;
-  font-size: 4em;
-  margin-left: 5rem;
-  margin-top: 9rem;
-`;
 
-export const Cv_photo = styled.img`
-  width: 20em;
-  height: 30em;
-  filter: blur(1px) grayscale(100%);
-  border: 5px solid black;
-  margin-left: 6rem;
-`;
-
-export const Button_CV = styled.button`
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  font-family: "La Belle Aurore", cursive;
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 12.5rem;
-  margin-top: 31rem;
-  :hover {
-    text-decoration: underline;
-    cursor: pointer;
-    transition: 1s;
-  }
-`;
 export const DivBodyHtml = styled.p`
   display: none;
   @media (max-width: 1400px) {

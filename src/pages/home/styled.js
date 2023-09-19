@@ -94,7 +94,7 @@ font-family: 'Bree Serif', serif;
 :hover{
     cursor: default;
 }
-z-index:2;
+z-index:1;
 
 @media (max-width: 800px) {
     margin-left:0;
@@ -106,12 +106,13 @@ z-index:2;
   @media (max-width: 300px) {
     font-size:15px;
   }
+
+  @media (max-height: 550px) {
+    margin-bottom:0;
+    
+  }
 `
 
-export const LetterLogo = styled.img`
-width:90px;
-height:100px;
-`
 export const PhotoLeo = styled.img`
 width:438px;
 height:778px;

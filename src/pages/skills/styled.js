@@ -6,33 +6,30 @@ export const MainDiv = styled.div`
   background-color: #1d1d1d;
   height: 100%;
   min-height: 100vh;
-
-
-
 `;
 
 export const MainDivSub = styled.div`
-margin-left:10rem;
-display: flex;
+  margin-left: 10rem;
+  display: flex;
   flex-direction: row;
-@media (max-width: 1400px) {
+  @media (max-width: 1400px) {
     flex-direction: column;
   }
-@media (max-width: 800px) {
-    margin-left:0px;
-    font-size:12px;
-    h2{
-      font-size:40px;
+  @media (max-width: 800px) {
+    margin-left: 0px;
+    font-size: 12px;
+    h2 {
+      font-size: 40px;
     }
   }
 
   @media (max-width: 300px) {
-    b{
-      font-size:30px;
+    b {
+      font-size: 30px;
+    }
+    font-size: 10px;
   }
-  font-size:10px;
-  }
-`
+`;
 
 export const Main1 = styled.div`
   margin: 0;
@@ -77,11 +74,11 @@ export const Title = styled.h2`
   margin: 0;
   padding: 0;
   margin-left: 5rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration1 = styled.div`
@@ -113,8 +110,8 @@ export const Decoration3 = styled.div`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration4 = styled.div`
@@ -127,8 +124,8 @@ export const Decoration4 = styled.div`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 export const Decoration5 = styled.p`
   font-family: "La Belle Aurore", cursive;
@@ -140,8 +137,8 @@ export const Decoration5 = styled.p`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration6 = styled.p`
@@ -154,25 +151,25 @@ export const Decoration6 = styled.p`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Text = styled.p`
-  color: #DCDCDC;
+  color: #dcdcdc;
   font-size: 1em;
   margin-left: 5rem;
   margin-top: -1.3rem;
   margin-right: 10rem;
   letter-spacing: 1px;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
 
   @media (max-width: 800px) {
-   width:60%;
+    width: 60%;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Skill1 = styled.div`
@@ -240,7 +237,6 @@ export const BoxContainer = styled.div`
   width: 95%;
   margin-bottom: 50px;
   overflow: hidden;
-  
 
   @media (max-width: 1400px) {
     width: 100%;
@@ -260,7 +256,7 @@ export const BoxContainer = styled.div`
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   width: 30em;
   height: 100%;
   background-color: #151515;
@@ -268,13 +264,12 @@ export const Box = styled.div`
   color: #ffffff;
   padding: 10px;
 
- 
   h1 {
     font-size: 20px;
     padding: 0;
     margin: 0;
     padding-bottom: 20px;
-    font-family: 'Righteous', cursive;
+    font-family: "Righteous", cursive;
     letter-spacing: 1px;
   }
   h2 {
@@ -289,37 +284,35 @@ export const Box = styled.div`
     color: #ababab;
     padding: 0;
     margin: 0;
-    font-family: 'Bree Serif', serif;
+    font-family: "Bree Serif", serif;
     @media (max-width: 450px) {
-      padding-right:50px;
+      padding-right: 50px;
     }
     @media (max-width: 380px) {
-      padding-right:80px;
+      padding-right: 80px;
     }
     @media (max-width: 345px) {
-      padding-right:95px;
+      padding-right: 95px;
     }
 
     @media (max-width: 320px) {
-      padding-right:105px;
+      padding-right: 105px;
     }
     @media (max-width: 300px) {
-      padding-right:110px;
+      padding-right: 110px;
     }
   }
 
   @media (max-width: 800px) {
-
-    h1{
-      font-size:18px;
+    h1 {
+      font-size: 18px;
     }
-    h2{
-      font-size:10px;
+    h2 {
+      font-size: 10px;
     }
-    p{
-      font-size:12px;
+    p {
+      font-size: 12px;
     }
-   
   }
 `;
 
@@ -469,13 +462,11 @@ export const StyledButton = styled.button`
   text-align: center;
   font-size: 1.4em;
   border: 1px solid #ad1111;
-  /* margin-top:10px;
-margin-left:16rem; */
   transition: 0.5s;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
 
   @media (max-width: 350px) {
-    width:12rem;
+    width: 12rem;
   }
 
   :hover {
@@ -546,7 +537,7 @@ export const Decoration9resp = styled.p`
   :hover {
     cursor: default;
   }
-  margin-top:-30px;
+  margin-top: -30px;
 `;
 export const Decoration10resp = styled.p`
   font-family: "La Belle Aurore", cursive;

@@ -2,18 +2,12 @@ import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-
 const Background = () => {
   const particlesInit = async (main) => {
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {
-  };
+  const particlesLoaded = (container) => {};
 
   return (
     <Particles
@@ -30,7 +24,7 @@ const Background = () => {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
@@ -96,4 +90,4 @@ const Background = () => {
   );
 };
 
-export default Background
+export default Background;

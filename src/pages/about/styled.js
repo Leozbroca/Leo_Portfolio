@@ -8,26 +8,24 @@ export const MainDiv = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-
-
 `;
 
 export const MainDivSub = styled.div`
-margin-left:10rem;
-display: flex;
+  margin-left: 10rem;
+  display: flex;
   flex-direction: row;
   @media (max-width: 1400px) {
     flex-direction: column;
   }
 
-@media (max-width: 800px) {
-    margin-left:0px;
-    font-size:12px;
-    h2{
-      font-size:40px;
+  @media (max-width: 800px) {
+    margin-left: 0px;
+    font-size: 12px;
+    h2 {
+      font-size: 40px;
     }
   }
-`
+`;
 
 export const Main1 = styled.div`
   margin: 0;
@@ -37,7 +35,6 @@ export const Main1 = styled.div`
   width: 60%;
   display: flex;
   flex-direction: row;
-  /* pointer-events: none; */
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -57,7 +54,6 @@ export const Main1 = styled.div`
   @media (max-width: 350px) {
     width: 60%;
   }
-
 `;
 
 export const Main2 = styled.div`
@@ -79,14 +75,12 @@ export const Main2 = styled.div`
 
   @media (max-width: 1400px) {
     width: 100%;
-
   }
- 
+
   @media (max-width: 550px) {
-    display:none;
+    display: none;
   }
 `;
-
 
 export const Title = styled.h2`
   color: #ad1111;
@@ -94,15 +88,15 @@ export const Title = styled.h2`
   margin: 0;
   padding: 0;
   margin-left: 5rem;
-  font-family: 'Righteous', cursive;
-  letter-spacing:1px;
+  font-family: "Righteous", cursive;
+  letter-spacing: 1px;
 
   p {
     display: inline;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration1 = styled.div`
@@ -133,8 +127,8 @@ export const Decoration3 = styled.div`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration4 = styled.div`
@@ -147,8 +141,8 @@ export const Decoration4 = styled.div`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 export const Decoration5 = styled.p`
   font-family: "La Belle Aurore", cursive;
@@ -160,8 +154,8 @@ export const Decoration5 = styled.p`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration6 = styled.p`
@@ -174,8 +168,8 @@ export const Decoration6 = styled.p`
     cursor: default;
   }
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
+    margin-left: 3rem;
+  }
 `;
 
 export const Decoration9 = styled.p`
@@ -199,58 +193,30 @@ export const Decoration10 = styled.p`
   }
 `;
 
-export const MyImg = styled.img`
-  z-index: 2;
-  border-radius: 15px;
-  width: 490px;
-  height: 590px;
-  background-size: auto;
-`;
-
 export const Text = styled.p`
-  color: #DCDCDC;
+  color: #dcdcdc;
   font-size: 1em;
   margin-left: 5rem;
   margin-top: -1.3rem;
   margin-right: 10rem;
   letter-spacing: 1px;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
 
   @media (max-width: 1400px) {
     width: 100%;
   }
 
   @media (max-width: 350px) {
-    margin-right:0;
+    margin-right: 0;
   }
 
   @media (max-width: 300px) {
-      margin-left:3rem;
-    }
-`;
-
-export const Border = styled.div`
-  position: relative;
-  width: 500px;
-  height: 600px;
-  background-color: black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-`;
-
-export const ImgBorder = styled.span`
-  position: absolute;
-  inset: 5px;
-  border-radius: 16px;
-  background-color: black;
-  z-index: 1;
+    margin-left: 3rem;
+  }
 `;
 
 export const FixedB = styled.div`
-display:flex;
-flex-direction: column;
-width:100%;
-`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;

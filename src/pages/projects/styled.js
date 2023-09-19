@@ -6,7 +6,7 @@ export const Title = styled.h2`
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -214,7 +214,7 @@ export const SecondMainDiv = styled.div`
     padding: 0;
     height: 40px;
     width: 125px;
-    margin: 0px 10px 0px 10px;
+    margin: 0;
     font-size: 16px;
     border-radius: 20px;
     text-decoration: none;
@@ -252,12 +252,61 @@ export const SecondMainDiv = styled.div`
     margin-top: 5px;
   }
 
+  .container .box .content .info a button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+
+ 
+
+:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+  display:flex;
+  flex-direction:row
+  justify-content:center;
+  align-items:center;
+  margin:0;
+
+  p{
+    font-size:15px;
+    margin:0;
+  }
+}
+
+
+::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(184, 4, 52, 1) 10.8%,
+    rgba(184, 4, 136, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+  }
+
   .container .box .content .info a button:hover {
     cursor: pointer;
-    color: white;
-    background-color: rgba(40, 40, 40, 0.6);
-    border-color: white;
-    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+    
   }
 
   .container .box:hover .content h2,
@@ -279,7 +328,6 @@ export const MainDiv = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Bree Serif", serif;
-  /* pointer-events: none; */
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -290,8 +338,12 @@ export const MainDiv = styled.div`
 export const DivLogo = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   text-decoration: none;
+
+  a {
+    display: flex;
+  }
 `;
 
 export const ImgHeader = styled.img`

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   MainDiv,
   Main1,
@@ -7,11 +7,6 @@ import {
   Text,
   Form,
   DivForm,
-  StyledInputs,
-  StyledInput1,
-  StyledInput2,
-  StyledInput3,
-  StyledInput4,
   StyledInput5,
   Decoration1,
   Decoration2,
@@ -23,9 +18,6 @@ import {
   Decoration8,
   Decoration9,
   Decoration10,
-  Cv_photo,
-  TitleCV,
-  Button_CV,
   DivBodyHtml,
   Decoration10resp,
   Decoration9resp,
@@ -33,11 +25,15 @@ import {
   MainDivSub,
 } from "./styled";
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
-import port from "../../assets/cv_port.png";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineAtSymbol } from "react-icons/hi";
 
+import Burger from "../../components/Burger/Burger.js";
+import Menu from "../../components/Menu/Menu.js";
+
 const ContactPage = () => {
+  const [open, setOpen] = useState(false);
+
   const submiting = function (e) {
     e.preventDefault();
   };
@@ -45,6 +41,12 @@ const ContactPage = () => {
   return (
     <MainDiv>
       <ScreenLoading />
+
+      <div>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+      </div>
+
       <MainDivSub>
         <Main1>
           <Decoration1>{"<html>"}</Decoration1>

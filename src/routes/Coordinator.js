@@ -1,23 +1,23 @@
 export const goToHome = (navigate) => {
-    navigate("/")
-}
+  navigate("/");
+};
 
 export const goToAbout = (navigate) => {
-    navigate("/about")
-}
+  navigate("/about");
+};
 
 export const goToSkills = (navigate) => {
-    navigate("/skills")
-}
+  navigate("/skills");
+};
 
 export const goToProjects = (navigate) => {
-    navigate("/projects")
-}
+  navigate("/projects");
+};
 
 export const goToContact = (navigate) => {
-    navigate("/contact")
-}
+  navigate("/contact");
+};
 
-export const goTo = (url,navigate) =>{
-    navigate(url)
-}
+export const goTo = (url, navigate) => {
+  navigate(url);
+};
