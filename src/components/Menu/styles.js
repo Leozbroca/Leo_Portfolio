@@ -92,7 +92,7 @@ export const LogoImgMenu = styled.img`
   pointer-events: none;
 
   @media (max-height: 550px) {
-    margin-right: 100px;
+    margin-right: 50px;
   }
 `;
 
