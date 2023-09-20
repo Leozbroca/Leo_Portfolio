@@ -27,15 +27,21 @@ import {
 import ScreenLoading from "../../components/screenLoading/ScreenLoading";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineAtSymbol } from "react-icons/hi";
+import useForm from "../../hooks/useForm";
 
 import Burger from "../../components/Burger/Burger.js";
 import Menu from "../../components/Menu/Menu.js";
+import { SendEmail } from "../../service/SendEmail";
 
 const ContactPage = () => {
   const [open, setOpen] = useState(false);
+  const [form, onChange, clear] = useForm({name: "", email: "", subject: "", message: ""})
+  const [toasty, setToasty] = useState(false)
+  // const toast = useToast()
 
   const submiting = function (e) {
     e.preventDefault();
+    SendEmail(form, clear, setToasty)
   };
 
   return (
@@ -75,6 +81,9 @@ const ContactPage = () => {
                     placeholder="Name"
                     required
                     type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={onChange}
                   />
                   <span className="input-border input-border-alt"></span>
                 </div>
@@ -84,6 +93,9 @@ const ContactPage = () => {
                     placeholder="Email"
                     required
                     type="text"
+                    name="email"
+                    value={form.email}
+                    onChange={onChange}
                   />
                   <span className="input-border input-border-alt"></span>
                 </div>
@@ -92,7 +104,11 @@ const ContactPage = () => {
                 <input
                   className="input input-alt"
                   placeholder="Subject"
+                  required
                   type="text"
+                  name="subject"
+                  value={form.subject}
+                  onChange={onChange}
                 />
                 <span className="input-border input-border-alt"></span>
               </div>
@@ -102,6 +118,9 @@ const ContactPage = () => {
                   placeholder="Message"
                   required
                   type="text"
+                  name="message"
+                    value={form.message}
+                    onChange={onChange}
                 />
                 <span className="input-border input-border-alt"></span>
               </div>
@@ -150,6 +169,7 @@ const ContactPage = () => {
           </DivBodyHtml>
         </Main2>
       </MainDivSub>
+    {toasty ? <toasty/> : <></>}
     </MainDiv>
   );
 };
