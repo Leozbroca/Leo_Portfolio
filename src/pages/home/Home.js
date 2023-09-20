@@ -24,7 +24,7 @@ const HomePage = () => {
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
-
+    
       <MainDivSub>
         <Background />
         <Main1>
@@ -68,6 +68,7 @@ const HomePage = () => {
           </SecondDiv>
         </Main1>
       </MainDivSub>
+      {console.log(window.location.href)}
     </MainDiv>
   );
 };

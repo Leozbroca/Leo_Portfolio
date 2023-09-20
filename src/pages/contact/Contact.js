@@ -42,7 +42,8 @@ const ContactPage = () => {
   const submiting = function (e) {
     e.preventDefault();
     SendEmail(form, clear, setToasty)
-  };
+  }
+ 
 
   return (
     <MainDiv>
@@ -169,7 +170,7 @@ const ContactPage = () => {
           </DivBodyHtml>
         </Main2>
       </MainDivSub>
-    {toasty ? <toasty/> : <></>}
+    {/* {toasty ? <toasty/> : <></>} */}
     </MainDiv>
   );
 };

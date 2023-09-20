@@ -6,6 +6,7 @@ export const SendEmail = async(body, clear, setToasty) => {
         await axios.post(`https://portfolio-back-end-eight.vercel.app/send`, body)
         clear()
         setToasty(true)
+        alert("Email enviado!")
     }
     catch (err) {
         console.log(err)
