@@ -49,7 +49,7 @@ const ProjectsPage = () => {
             <div className="content">
               <h2>Leozbroca Portfólio</h2>
               <div className="info">
-                <p>Meu portfolio</p>
+                <p>My portfolio</p>
                 <DivLogo>
                   <a
                     href="https://github.com/Leozbroca/Leo_Portfolio"
@@ -78,9 +78,7 @@ const ProjectsPage = () => {
               <h2>Pokedéx</h2>
               <div className="info">
                 <p>
-                  Projeto com o objetivo de recriar uma pokédex, onde é possível
-                  adicionar ou remover pokémons, além de conseguir visualizar
-                  suas informações.
+                Project with the aim of recreating a Pokédex, where it's possible to add or remove Pokémon, as well as view their information.
                 </p>
                 <DivLogo>
                   <a
@@ -105,7 +103,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visitar site </p>
+                        <p>Visit website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -124,9 +122,7 @@ const ProjectsPage = () => {
               <h2>LabeFood</h2>
               <div className="info">
                 <p>
-                  O projeto LabeFoods teve como objetivo simular um app de
-                  entregas tal como o UberEats, Rappi e Ifood. Layout para
-                  mobile.
+                The LabeFoods project aimed to simulate a food delivery app similar to UberEats, Rappi, and iFood. Mobile layout.
                 </p>
                 <DivLogo>
                   <a
@@ -151,7 +147,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visitar site </p>
+                        <p>Visit website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -170,8 +166,7 @@ const ProjectsPage = () => {
               <h2>TMDB Movies</h2>
               <div className="info">
                 <p>
-                  Um site mostrando os filmes mais populares do momento, sendo
-                  possível filtra-los por página e ver toda a sua descrição.
+                A website displaying the most popular movies of the moment, allowing you to filter them by page and view their full description.
                 </p>
                 <DivLogo>
                   <a
@@ -196,7 +191,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visitar site </p>
+                        <p>Visit website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -215,9 +210,7 @@ const ProjectsPage = () => {
               <h2>Cookenu</h2>
               <div className="info">
                 <p>
-                  Site de receitas. Contém várias receitas adicionadas e é
-                  possível adicionar sua própria receita. É necessário login
-                  para acessar todas as funcionalidades.
+                Recipe website. It contains several added recipes, and it's possible to add your own recipe. Login is required to access all functionalities.
                 </p>
                 <DivLogo>
                   <a
@@ -242,7 +235,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visitar site </p>
+                        <p>Visit website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -260,7 +253,7 @@ const ProjectsPage = () => {
             <div className="content">
               <h2>Labefy</h2>
               <div className="info">
-                <p>Site para criação de playlists com músicas do Spotfy.</p>
+                <p>Website for creating playlists with Spotify songs.</p>
                 <DivLogo>
                   <a href="" target="_blank" rel="noreferrer">
                     <button>
@@ -280,7 +273,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visitar site </p>
+                        <p>Visit website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -298,7 +291,7 @@ const ProjectsPage = () => {
             <div className="content">
               <h2>Encantada Saboaria</h2>
               <div className="info">
-                <p>E-commerce de uma saboaria.</p>
+                <p>E-commerce for a soap shop.</p>
                 <DivLogo>
                   <a
                     href="https://github.com/Leozbroca/Encantada-Saboaria-Front-end"
@@ -322,7 +315,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visitar site </p>
+                        <p>Visit website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
