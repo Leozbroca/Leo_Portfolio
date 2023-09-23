@@ -9,8 +9,8 @@ const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={10} ref={ref} variant="filled" {...props} />;
 });
 
-export default function Toast() {
-    const { toasty, setToasty } =
+export default function ErrToast() {
+    const { errToasty, setErrToasty } =
     useContext(GlobalStateContext);
   const vertical = 'top'
   const horizontal = 'center'
@@ -21,21 +21,20 @@ export default function Toast() {
       return;
     }
 
-    setToasty(false);
+    setErrToasty(false);
   };
 
   return (
     <Stack spacing={2} sx={{ width: "100%" }}>
       <Snackbar
-        open={toasty}
+        open={errToasty}
         autoHideDuration={6000}
         onClose={handleClose}
         anchorOrigin={{ vertical, horizontal }}
         key={vertical + horizontal}
       >
-        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
-          Email sent!
-          Leozbroca will contact you as soon as possible.
+        <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+          Something went wrong! Please try again.
         </Alert>
       </Snackbar>
     </Stack>

@@ -329,7 +329,7 @@ export const StyledInput5 = styled.button`
   border: 1px solid #ad1111;
   margin-top: 10px;
   /* margin-right: 7.5rem; */
-  transition: 0.5s;
+  transition: 1s;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
 
   :hover {

@@ -1,15 +1,17 @@
 import axios from 'axios'
 
 
-export const SendEmail = async(body, clear, setToasty) => {
+export const SendEmail = async(body, clear, setToasty, setErrToasty, setIsLoading) => {
+    setIsLoading(true)
     try{
         await axios.post(`https://portfolio-back-end-eight.vercel.app/send`, body)
+        setIsLoading(false)
         clear()
         setToasty(true)
-        alert("E-mail sent!")
     }
     catch (err) {
-        console.log(err)
+        setIsLoading(false)
+        setErrToasty(true)
     }
 
 }

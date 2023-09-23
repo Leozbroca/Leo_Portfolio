@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   MainDiv,
   Main1,
@@ -28,22 +28,31 @@ import ScreenLoading from "../../components/screenLoading/ScreenLoading";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineAtSymbol } from "react-icons/hi";
 import useForm from "../../hooks/useForm";
-
+import GlobalStateContext from "../../context/GlobalContextState";
 import Burger from "../../components/Burger/Burger.js";
 import Menu from "../../components/Menu/Menu.js";
 import { SendEmail } from "../../service/SendEmail";
+import Toast from "../../components/Toast/toast";
+import ErrToast from "../../components/Toast/errorToast";
+import { CircularProgress } from "@mui/material";
 
 const ContactPage = () => {
   const [open, setOpen] = useState(false);
-  const [form, onChange, clear] = useForm({name: "", email: "", subject: "", message: ""})
-  const [toasty, setToasty] = useState(false)
+  const [form, onChange, clear] = useForm({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const { setToasty, setErrToasty } = useContext(GlobalStateContext);
+
+  const [isLoading, setIsLoading] = useState(false);
   // const toast = useToast()
 
   const submiting = function (e) {
     e.preventDefault();
-    SendEmail(form, clear, setToasty)
-  }
- 
+    SendEmail(form, clear, setToasty, setErrToasty, setIsLoading);
+  };
 
   return (
     <MainDiv>
@@ -120,15 +129,25 @@ const ContactPage = () => {
                   required
                   type="text"
                   name="message"
-                    value={form.message}
-                    onChange={onChange}
+                  value={form.message}
+                  onChange={onChange}
                 />
                 <span className="input-border input-border-alt"></span>
               </div>
             </DivForm>
 
             <DivFormAlign>
-              <StyledInput5 className="btn btn-4">Send</StyledInput5>
+              <StyledInput5 className="btn btn-4">
+                {isLoading ? (
+                  <CircularProgress
+                    color={"inherit"}
+                    size={30}
+                    sx={{ marginTop: 1 }}
+                  />
+                ) : (
+                  <>Send</>
+                )}
+              </StyledInput5>
             </DivFormAlign>
           </Form>
 
@@ -170,7 +189,9 @@ const ContactPage = () => {
           </DivBodyHtml>
         </Main2>
       </MainDivSub>
-    {/* {toasty ? <toasty/> : <></>} */}
+      {Toast()}
+      {ErrToast()}
+      
     </MainDiv>
   );
 };

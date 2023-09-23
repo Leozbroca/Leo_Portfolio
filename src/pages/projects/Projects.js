@@ -103,7 +103,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visit website</p>
+                        <p>Website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -147,7 +147,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visit website</p>
+                        <p>Website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -191,7 +191,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visit website</p>
+                        <p>Website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -235,7 +235,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visit website</p>
+                        <p>Website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -273,7 +273,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visit website</p>
+                        <p>Website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
@@ -315,7 +315,7 @@ const ProjectsPage = () => {
                   >
                     <button>
                       <div className="button-content">
-                        <p>Visit website</p>
+                        <p>Website</p>
                         <div>
                           <FiArrowRightCircle size="1.5em" />
                         </div>
