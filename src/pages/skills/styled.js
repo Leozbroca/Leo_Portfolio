@@ -22,7 +22,11 @@ export const MainDivSub = styled.div`
       font-size: 40px;
     }
   }
-
+  @media (max-width: 450px) {
+    h2 {
+      padding-right:50px;
+    }
+  }
   @media (max-width: 300px) {
     b {
       font-size: 30px;
@@ -75,7 +79,6 @@ export const Title = styled.h2`
   padding: 0;
   margin-left: 5rem;
   font-family: "Righteous", cursive;
-
   @media (max-width: 300px) {
     margin-left: 3rem;
   }

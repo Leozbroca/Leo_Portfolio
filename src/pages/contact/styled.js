@@ -229,7 +229,7 @@ export const DivForm = styled.div`
   .input {
     color: gray;
     font-size: 0.9rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     box-sizing: border-box;
     padding-inline: 0.5em;
